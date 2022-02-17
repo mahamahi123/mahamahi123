@@ -1,0 +1,26 @@
+- 👋 Hi, I’m @mahamahi123
+
+<!---
+mahamahi123/mahamahi123 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+Write a program to print sum of n febonocci numbers.
+def calculateSum(n) :
+    if (n <= 0) :
+    return 0
+    fibo =[0] * (n+1)
+    fibo[1] = 1
+    # Initialize result
+    sm = fibo[0] + fibo[1]
+    # Add remaining terms
+    for i in range(2,n+1) :
+        fibo[i] = fibo[i-1] + fibo[i-2]
+        sm = sm + fibo[i]
+        return sm
+        # Driver program to test
+        # above function
+        n = 4
+        print("Sum of Fibonacci numbers is :")
+        calculateSum(n)
+output:
+Sum of Fibonacci numbers is : 7
