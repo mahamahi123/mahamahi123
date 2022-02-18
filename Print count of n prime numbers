@@ -1,0 +1,25 @@
+
+
+<!---
+mahamahi123/mahamahi123 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+#Write a program to print count of n prime numbers.
+num=int(input("Enter range:"))
+
+count=0
+
+print("Prime numbers:",end=' ')
+
+for n in range(2,num):
+
+    for i in range(2,n):
+
+        if(n%i==0):
+
+            break
+
+    else:
+        count=count+1
+        
+print(count)
